@@ -1,4 +1,4 @@
-/* Universal reset styles */
+/*--------- Universal reset styles ---------*/
 * {
  margin: 0;
  padding: 0;
@@ -6,8 +6,7 @@
 }
 
 
-
-/* Typography styles */
+/*--------- Typography styles ---------*/
 h2:last-child, 
 h3:last-child, 
 h4:last-child,
@@ -18,68 +17,98 @@ p:last-child {
 }
 
 
-
-/* Padding utility classes */
-.padded-sm  { padding: 2.5%;                       }
-.padded-md  { padding: 5%;                         }
-.padded-lg  { padding: 10%;                        }
-
-.padded-05  { padding: 0.5rem;                     }
-.padded-1   { padding: 1rem;                       }
-.padded-2   { padding: 2rem;                       }
-
-.padded-t   { padding-top: 5%;                     }
-.padded-b   { padding-bottom: 5%;                  }
-.padded-l   { padding-left: 5%;                    }
-.padded-r   { padding-right: 5%;                   }
-
-.padded-tb  { padding-top: 5%; padding-bottom: 5%; }
-.padded-lr  { padding-left: 5%; padding-right: 5%; }
-
-.padded-t-1 { padding-top: 1rem;                   }
-.padded-b-1 { padding-bottom: 1rem;                }
-.padded-l-1 { padding-left: 1rem;                  }
-.padded-r-1 { padding-right: 1rem;                 }
-
-.padded-t-2 { padding-top: 2rem;                   }
-.padded-b-2 { padding-bottom: 2rem;                }
-.padded-l-2 { padding-left: 2rem;                  }
-.padded-r-2 { padding-right: 2rem;                 }
-
-.padded-t-0 { padding-top: 0;                      }
-.padded-b-0 { padding-bottom: 0;                   }
-.padded-l-0 { padding-left: 0;                     }
-.padded-r-0 { padding-right: 0;                    }
+/*--------- Genreal CSS styles (apply everywhere) ---------*/
+.show-xs,
+.show-sm,
+.show-md {
+    display: none;
+}
 
 
+/*--------- Padding utility classes ---------*/
+.padded-sm  { padding: 2.5%;                        }
+.padded-md  { padding: 5%;                          }
+.padded-lg  { padding: 10%;                         }
 
-/* Margin utility classes */
-.margin-t   { margin-top: 5%;                    }
-.margin-b   { margin-bottom: 5%;                 }
-.margin-l   { margin-left: 5%;                   }
-.margin-r   { margin-right: 5%;                  }
+.padded-05  { padding: 0.5rem;                      }
+.padded-1   { padding: 1rem;                        }
+.padded-2   { padding: 2rem;                        }
 
-.margin-t-1 { margin-top: 1rem;                  }
-.margin-b-1 { margin-bottom: 1rem;               }
-.margin-l-1 { margin-left: 1rem;                 }
-.margin-r-1 { margin-right: 1rem;                }
+.padded-t   { padding-top: 5%;                      }
+.padded-b   { padding-bottom: 5%;                   }
+.padded-l   { padding-left: 5%;                     }
+.padded-r   { padding-right: 5%;                    }
 
-.margin-t-2 { margin-top: 2rem;                  }
-.margin-b-2 { margin-bottom: 2rem;               }
-.margin-l-2 { margin-left: 2rem;                 }
-.margin-r-2 { margin-right: 2rem;                }
+.padded-tb  { padding-top: 5%; padding-bottom: 5%;  }
+.padded-lr  { padding-left: 5%; padding-right: 5%;  }
 
-.margin-t-0 { margin-top: 0;                     }
-.margin-b-0 { margin-bottom: 0;                  }
-.margin-l-0 { margin-left: 0;                    }
-.margin-r-0 { margin-right: 0;                   }
+.padded-t-1 { padding-top: 1rem;                    }
+.padded-b-1 { padding-bottom: 1rem;                 }
+.padded-l-1 { padding-left: 1rem;                   }
+.padded-r-1 { padding-right: 1rem;                  }
 
-.margin-tb  { margin-top: 5%; margin-bottom: 5%; }
-.margin-lr  { margin-left: 5%; margin-right: 5%; }
+.padded-t-2 { padding-top: 2rem;                    }
+.padded-b-2 { padding-bottom: 2rem;                 }
+.padded-l-2 { padding-left: 2rem;                   }
+.padded-r-2 { padding-right: 2rem;                  }
+
+.padded-t-0 { padding-top: 0;                       }
+.padded-b-0 { padding-bottom: 0;                    }
+.padded-l-0 { padding-left: 0;                      }
+.padded-r-0 { padding-right: 0;                     }
 
 
+/*--------- Margin utility classes ---------*/
+.margin-t   { margin-top: 5%;                       }
+.margin-b   { margin-bottom: 5%;                    }
+.margin-l   { margin-left: 5%;                      }
+.margin-r   { margin-right: 5%;                     }
 
-/* Media queries utility classes */
+.margin-t-1 { margin-top: 1rem;                     }
+.margin-b-1 { margin-bottom: 1rem;                  }
+.margin-l-1 { margin-left: 1rem;                    }
+.margin-r-1 { margin-right: 1rem;                   }
+
+.margin-t-2 { margin-top: 2rem;                     }
+.margin-b-2 { margin-bottom: 2rem;                  }
+.margin-l-2 { margin-left: 2rem;                    }
+.margin-r-2 { margin-right: 2rem;                   }
+
+.margin-t-0 { margin-top: 0;                        }
+.margin-b-0 { margin-bottom: 0;                     }
+.margin-l-0 { margin-left: 0;                       }
+.margin-r-0 { margin-right: 0;                      }
+
+.margin-tb  { margin-top: 5%; margin-bottom: 5%;    }
+.margin-lr  { margin-left: 5%; margin-right: 5%;    }
+
+
+/*--------- Responsive imaage utility classes ---------*/
+.bg-image {
+    background-color: rgb(240, 240, 240);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Aspect ratio */
+.portrait-tall  { padding-bottom: 175%;              }
+.portrait       { padding-bottom: 125%;              }
+.square         { padding-bottom: 100%;              }
+.landscape      { padding-bottom: 66%;               }
+.landscape-wide { padding-bottom: 56%;               }
+
+/* Background position */
+.bg-pos-t       { background-position: top;          }
+.bg-pos-b       { background-position: bottom;       }
+.bg-pos-l       { background-position: left;         }
+.bg-pos-r       { background-position: right;        }
+
+.bg-pos-t-l     { background-position: left top;     }
+.bg-pos-b-r     { background-position: right bottom; }
+
+
+/*--------- Media queries utility classes ---------*/
 /*
 576 -xs - 36em
 768 - sm - 48em
@@ -87,26 +116,22 @@ p:last-child {
 1280-lg
 */
 
-/* Genreal CSS styles (apply everywhere) */
-.show-xs,
-.show-sm,
-.show-md {
-    display: none;
-}
-
-/* Shows only on XS devices and smaller */
-.show-xs        { display: block;       } 
-/* Shows only on SM devices and smaller */
-.show-sm        { display: block;       } 
+/* MD media query (64em / 1024px) */
+/* Styles added here will apply at devices smaller than 1024px, or zoomed in equivalent */
+@media(max-width:64em) {
 /* Shows only on MD devices and smaller */
 .show-md        { display: block;       } 
-
-/* Hides on XS devices and smaller */
-.hide-xs        { display: none;        } 
-/* Hides on SM devices and smaller */
-.hide-sm        { display: none;        } 
 /* Hides on MD devices and smaller */
 .hide-md        { display: none;        } 
+}
+
+/* SM media query (48em / 768px) */ 
+/* Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+@media(max-width:48em) {
+/* Shows only on SM devices and smaller */
+.show-sm        { display: block;       } 
+/* Hides on SM devices and smaller */
+.hide-sm        { display: none;        } 
 
 .sm-text-center { text-align: center;   }
 .sm-text-left   { text-align: left;     }
@@ -120,3 +145,13 @@ p:last-child {
 .sm-padded-b-0  { padding-bottom: 0rem; }
 .sm-margin-t-0  { margin-top: 0rem;     }
 .sm-margin-b-0  { margin-bottom: 0rem;  }
+}
+
+/* XS media query (36em / 576px) */ 
+/* Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+@media(max-width: 36em) {
+/* Shows only on XS devices and smaller */
+.show-xs        { display: block;       } 
+/* Hides on XS devices and smaller */
+.hide-xs        { display: none;        } 
+}
